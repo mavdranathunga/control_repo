@@ -7,4 +7,8 @@ class profile::agent_nodes {
     ensure => present,
     ip     => '10.0.0.12',
   }
+  host {'minetest.puppet.vm':
+    ensure => present,
+    ip     => '10.0.0.12',
+  }
 }
