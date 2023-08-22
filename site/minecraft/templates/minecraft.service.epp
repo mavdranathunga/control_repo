@@ -1,0 +1,12 @@
+[unit]
+Description = minecraft server
+
+wants=network.target
+after=network.target
+
+[server]
+workingDirectory=<%= $install_dir %>
+ExecStart=/usr/bin/java -Xmx1024M -Xms1024M -jar minecraft_server.1.20.1.jar nogui
+
+[install]
+wantedBy=multy-user.target
